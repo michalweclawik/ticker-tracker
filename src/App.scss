@@ -1,3 +1,11 @@
 .app {
   background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+
+  &__header {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+  }
 }
