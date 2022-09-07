@@ -1,7 +1,10 @@
 .app {
-  background-color: aqua;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right bottom, #e4a7db, #d245db, #a22dce, #7d3ac5, #4d56bd);
 
   &__header {
     padding-top: 50px;
