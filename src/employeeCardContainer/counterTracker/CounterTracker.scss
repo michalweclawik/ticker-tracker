@@ -1,0 +1,28 @@
+.counterTracker {
+
+    display: flex;
+    flex-direction: column;
+
+
+    p {
+        border-top: 2px solid black;
+        font-size: 12px;
+    }
+
+    .counter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .counterNumber {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__buttons {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

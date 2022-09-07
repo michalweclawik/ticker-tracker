@@ -1,0 +1,40 @@
+.employeeCard {
+    width: 180px;
+    height: 240px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &__name,
+    &__role {
+        margin-top: 10px;
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 20px;
+    }
+
+    &__role {
+        font-size: 18px;
+    }
+
+
+
+    span {
+        font-size: 15px;
+        text-align: left;
+    }
+}

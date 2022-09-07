@@ -3,18 +3,17 @@ import { useState } from "react";
 import "./CounterTracker.scss";
 
 const CounterTracker = () => {
-  let [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(0);
 
-  const handleClick = (e) => {
-    if (e.target.value === "+") {
-      setNumber((number = number + 1));
-      console.log(number);
-    } else if (number === 0) {
-      return;
+  const handleClickDecrementation = () => {
+    if (number === 0) {
+      setNumber(0);
     } else {
-      setNumber((number = number - 1));
-      console.log(number);
+      setNumber(number - 1);
     }
+  };
+  const handleClickIncrementation = () => {
+    setNumber(number + 1);
   };
 
   return (
@@ -22,17 +21,15 @@ const CounterTracker = () => {
       <p>Complited ticket</p>
       <div className="counter">
         <button
-          value="-"
-          onClick={(e) => handleClick(e)}
-          className="counterButtonMinus"
+          onClick={() => handleClickDecrementation()}
+          className="counter__buttons"
         >
           -
         </button>
         <div className="counterNumber">{number}</div>
         <button
-          value="+"
-          onClick={(e) => handleClick(e)}
-          className="counterButtonPlus"
+          onClick={() => handleClickIncrementation()}
+          className="counter__buttons"
         >
           +
         </button>
