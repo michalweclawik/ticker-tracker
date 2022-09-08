@@ -5,11 +5,9 @@ import React from "react";
 const EmployeeCardContainer = ({ employeeArray }) => {
   const ticketCardJSX = employeeArray.map((employee) => {
     return (
-      <EmployeeCard
-        name={employee.name}
-        role={employee.role}
-        key={employee.id}
-      />
+      <div key={employee.id}>
+        <EmployeeCard name={employee.name} role={employee.role} />
+      </div>
     );
   });
 
