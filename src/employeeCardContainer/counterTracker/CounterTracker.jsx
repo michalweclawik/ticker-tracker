@@ -21,14 +21,14 @@ const CounterTracker = () => {
       <p>Complited ticket</p>
       <div className="counter">
         <button
-          onClick={() => handleClickDecrementation()}
+          onClick={handleClickDecrementation}
           className="counter__buttons"
         >
           -
         </button>
         <div className="counterNumber">{number}</div>
         <button
-          onClick={() => handleClickIncrementation()}
+          onClick={handleClickIncrementation}
           className="counter__buttons"
         >
           +
