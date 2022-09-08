@@ -2,12 +2,12 @@ import "./EmployeeCard.scss";
 import CounterTracker from "../counterTracker/CounterTracker";
 import React from "react";
 
-const EmployeeCard = (props) => {
-  const { name, role } = props;
+const EmployeeCard = ({ name, role, key }) => {
+  // const { name, role, key } = props;
 
   return (
     <div className="employeeCard">
-      <h2 className="employeeCard__name">
+      <h2 className="employeeCard__name" key={key}>
         <span>Name: </span> {name}
       </h2>
       <h3 className="employeeCard__role">

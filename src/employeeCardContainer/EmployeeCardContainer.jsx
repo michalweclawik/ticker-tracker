@@ -4,7 +4,13 @@ import React from "react";
 
 const EmployeeCardContainer = ({ employeeArray }) => {
   const ticketCardJSX = employeeArray.map((employee) => {
-    return <EmployeeCard name={employee.name} role={employee.role} />;
+    return (
+      <EmployeeCard
+        name={employee.name}
+        role={employee.role}
+        key={employee.id}
+      />
+    );
   });
 
   return <div className="EmployeeCardContainer">{ticketCardJSX}</div>;
