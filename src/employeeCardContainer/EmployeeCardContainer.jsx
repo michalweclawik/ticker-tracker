@@ -2,11 +2,12 @@ import EmployeeCard from "./employeeCard/EmployeeCard";
 import "./EmployeeCardContainer.scss";
 import React from "react";
 
-const EmployeeCardContainer = ({ employeeArray }) => {
+const EmployeeCardContainer = ({ employeeArray, handleDelete }) => {
   const ticketCardJSX = employeeArray.map((employee) => {
     return (
-      <div key={employee.id}>
+      <div key={employee.id} className="Employee__div">
         <EmployeeCard name={employee.name} role={employee.role} />
+        <button onClick={() => handleDelete(employee.id)}>DELETE BUTTON</button>
       </div>
     );
   });
