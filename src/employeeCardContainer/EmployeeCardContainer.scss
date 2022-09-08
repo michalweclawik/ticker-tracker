@@ -7,7 +7,7 @@
 }
 
 .Employee__div {
-    width: 220px;
+    width: 240px;
     height: 250px;
     border: 2px solid black;
     border-radius: 20px;
@@ -18,21 +18,36 @@
     align-items: center;
     background-color: lightgrey;
     opacity: 0.8;
+
+    &__button {
+        height: 25px;
+        border-radius: 10px;
+        position: unset;
+        z-index: 1;
+        cursor: pointer;
+
+
+    }
 }
 
-@media screen and (max-width: 1085px) {
+.Employee__div__button:hover {
+    background-color: darkgray;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1400px) {
     .EmployeeCardContainer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1200px) {
     .EmployeeCardContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 870px) {
     .EmployeeCardContainer {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -40,7 +55,7 @@
 
 
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 610px) {
     .EmployeeCardContainer {
         display: flex;
         flex-direction: column;

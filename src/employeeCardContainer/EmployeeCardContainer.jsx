@@ -7,7 +7,12 @@ const EmployeeCardContainer = ({ employeeArray, handleDelete }) => {
     return (
       <div key={employee.id} className="Employee__div">
         <EmployeeCard name={employee.name} role={employee.role} />
-        <button onClick={() => handleDelete(employee.id)}>DELETE BUTTON</button>
+        <button
+          className="Employee__div__button"
+          onClick={() => handleDelete(employee.id)}
+        >
+          DELETE CARD
+        </button>
       </div>
     );
   });

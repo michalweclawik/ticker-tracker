@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     opacity: 0.8;
+    position: absolute;
 
     &:hover {
         opacity: 1;
@@ -12,11 +13,11 @@
 
     &__name,
     &__role {
-        margin-top: 5px;
 
         align-items: baseline;
         text-align: center;
-
+        position: relative;
+        top: -30px
     }
 
     &__name {
@@ -24,7 +25,10 @@
     }
 
     &__role {
-        font-size: 18px;
+
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
