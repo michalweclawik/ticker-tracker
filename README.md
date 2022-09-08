@@ -44,7 +44,7 @@ After cloning repo to your local device open terminal in Visual Studio Code and 
 npm install
 ```
 
-Code above will install node modules file in your local repo. Then you just need to type in your reminal :
+Code above will install node modules file in your local repo. Then you just need to type in your terminal :
 
 ```
 npm start run
@@ -68,6 +68,4 @@ npm start run
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/
+- [@michalweclawik](https://github.com/michalweclawik) - Idea & Initial work
